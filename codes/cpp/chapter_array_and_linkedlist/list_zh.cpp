@@ -53,8 +53,12 @@ int main()
 
     cout << *(nums.end()-1) << endl;    
 
+    sort(nums.begin(), nums.begin()+3);
+    cout << "排序列表前三个元素后 nums = ";
+    printVector(nums);
+
     sort(nums.begin(), --nums.end());
-    cout << "排序列表后 nums = ";
+    cout << "排序列表出最后一位元素以外后 nums = ";
     printVector(nums);    
 
     sort(nums.begin(), nums.end());
