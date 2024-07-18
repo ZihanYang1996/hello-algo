@@ -8,3 +8,6 @@
 *.dSYM/
 
 build/
+
+# ignore .exe files
+*.exe
