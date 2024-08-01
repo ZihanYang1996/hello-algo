@@ -67,49 +67,49 @@ void freeMemoryTreeZH(TreeNodeZH<T>* root)
 }
 
 
-int main()
-{
-    /* 初始化二叉树 */
-    // 初始化节点
-    TreeNodeZH<int>* n1 = new TreeNodeZH<int>(1);
-    TreeNodeZH<int>* n2 = new TreeNodeZH<int>(2);
-    TreeNodeZH<int>* n3 = new TreeNodeZH<int>(3);
-    TreeNodeZH<int>* n4 = new TreeNodeZH<int>(4);
-    TreeNodeZH<int>* n5 = new TreeNodeZH<int>(5);
-    TreeNodeZH<int>* n6 = new TreeNodeZH<int>(6);
-    TreeNodeZH<int>* n7 = new TreeNodeZH<int>(7);
-    TreeNodeZH<int>* n8 = new TreeNodeZH<int>(8);
-    TreeNodeZH<int>* n9 = new TreeNodeZH<int>(9);
-    TreeNodeZH<int>* n10 = new TreeNodeZH<int>(10);
+// int main()
+// {
+//     /* 初始化二叉树 */
+//     // 初始化节点
+//     TreeNodeZH<int>* n1 = new TreeNodeZH<int>(1);
+//     TreeNodeZH<int>* n2 = new TreeNodeZH<int>(2);
+//     TreeNodeZH<int>* n3 = new TreeNodeZH<int>(3);
+//     TreeNodeZH<int>* n4 = new TreeNodeZH<int>(4);
+//     TreeNodeZH<int>* n5 = new TreeNodeZH<int>(5);
+//     TreeNodeZH<int>* n6 = new TreeNodeZH<int>(6);
+//     TreeNodeZH<int>* n7 = new TreeNodeZH<int>(7);
+//     TreeNodeZH<int>* n8 = new TreeNodeZH<int>(8);
+//     TreeNodeZH<int>* n9 = new TreeNodeZH<int>(9);
+//     TreeNodeZH<int>* n10 = new TreeNodeZH<int>(10);
 
-    // 构建节点之间的引用（指针）
-    n1->left = n2;
-    n1->right = n3;
-    n2->left = n4;
-    n2->right = n5;
-    n3->left = n6;
-    n3->right = n7;
-    n4->left = n8;
-    n4->right = n9;
-    n5->left = n10;
-    cout << endl << "初始化二叉树" << endl;
-    bfsPrintTree(n1);
+//     // 构建节点之间的引用（指针）
+//     n1->left = n2;
+//     n1->right = n3;
+//     n2->left = n4;
+//     n2->right = n5;
+//     n3->left = n6;
+//     n3->right = n7;
+//     n4->left = n8;
+//     n4->right = n9;
+//     n5->left = n10;
+//     cout << endl << "初始化二叉树" << endl;
+//     bfsPrintTree(n1);
 
-    /* 插入与删除节点 */
-    TreeNodeZH<int>* P = new TreeNodeZH<int>(0);
-    n1->left = P;
-    P->left = n2;
-    cout << endl << "插入节点 P 后" << endl;
-    bfsPrintTree(n1);
+//     /* 插入与删除节点 */
+//     TreeNodeZH<int>* P = new TreeNodeZH<int>(0);
+//     n1->left = P;
+//     P->left = n2;
+//     cout << endl << "插入节点 P 后" << endl;
+//     bfsPrintTree(n1);
     
-    // 删除节点 P
-    n1->left = n2;
-    delete P;
-    cout << endl << "删除节点 P 后" << endl;
-    bfsPrintTree(n1);
+//     // 删除节点 P
+//     n1->left = n2;
+//     delete P;
+//     cout << endl << "删除节点 P 后" << endl;
+//     bfsPrintTree(n1);
 
-    // 释放内存
-    freeMemoryTreeZH(n1);
+//     // 释放内存
+//     freeMemoryTreeZH(n1);
 
-    return 0;
-}
+//     return 0;
+// }
