@@ -45,10 +45,15 @@ void bfsPrintTree(TreeNodeZH<T>* root)
                 q.push(currentNode->right);
             }
             cout << currentNode->val;
+            if (i != levelSize - 1)
+            {
+                cout << ".";
+            }
+
         }
         if (!q.empty())
         {
-            cout << " ";
+            cout << "   ";
         }
     }
     cout << endl;
